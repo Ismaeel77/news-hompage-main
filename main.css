@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* p {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+body aside {
+  background-color: hsl(240, 100%, 5%);
+}
+body aside .aside-h {
+  color: hsl(35, 77%, 62%);
+}
+body aside .aside-content > h2 {
+  cursor: pointer;
+  transition: 0.3s;
+}
+body aside .aside-content:hover h2 {
+  color: hsl(35, 77%, 62%) !important;
+}
+body aside .aside-content:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+body .bright {
+  color: hsl(240, 100%, 5%);
+  font-size: 3rem;
+}
+body .p-home {
+  color: hsl(233, 8%, 50%);
+}
+body .main-btn {
+  background-color: hsl(5, 85%, 63%);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  border: none;
+  letter-spacing: 5px;
+}
+body .card {
+  border: none !important;
+}
+body .card-title {
+  color: hsl(233, 8%, 50%) !important;
+  font-size: 1.7rem !important;
+  font-weight: bold !important;
+}
+body .card-text {
+  color: hsl(240, 100%, 5%) !important;
+  font-weight: bold !important;
+  font-size: 1rem;
+}/*# sourceMappingURL=main.css.map */

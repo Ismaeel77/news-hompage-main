@@ -1,0 +1,61 @@
+@use'css/sass/variables' as *;
+@use'css/sass/mixins' as *;
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*p{
+  font-size: $p-size;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  aside{
+    background-color: $main-color;
+    .aside-h{
+      color: $soft-orange;
+    }
+    .aside-content > h2{
+      cursor: pointer;
+      @include prefix(transition, 0.3s, webkit moz o);
+    }
+    .aside-content:hover h2{
+      color: $soft-orange !important;
+    }
+    .aside-content:not(:last-child){
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+  .bright{
+    color: $main-color;
+    font-size: 3rem;
+  }
+  .p-home{
+    color: $fourth-color;
+  }
+  .main-btn{
+    background-color: $soft-red;
+    width: fit-content;
+    padding: 10px 30px;
+    border: none;
+    letter-spacing: 5px;
+  }
+  .card{
+    border: none !important;
+  }
+  .card-title{
+    color: $fourth-color !important;
+    font: {
+      size: 1.7rem !important;
+      weight: bold !important;
+    }
+  }
+  .card-text{
+    color: $main-color !important;
+    font: {
+      weight:bold !important;
+      size: 1rem;
+    }      
+  }
+}
